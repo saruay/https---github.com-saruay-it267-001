@@ -1,5 +1,5 @@
 class LightSwitch():
-    def _init_(self) -> None:
+    def __init__(self) -> None:
         self.switch_status = False
 
     def turnon(self):
@@ -12,7 +12,7 @@ class LightSwitch():
         print(f"status = {self.switch_status}")
 
 #สร้างวัตถุ object จากแม่พิมพ์ class
-switch_obj = LightSwitch
+switch_obj = LightSwitch()
 
 #เรียกใช้เมธอด/ฟังก์ชั่น
 switch_obj.show()
