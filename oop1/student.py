@@ -1,5 +1,9 @@
 class Student:
-    def __init__(self,id:str,name:str,major:str):
+    #มีสองวิธีดังนี้
+    #major:str = "IT"
+    #major = "IT"
+    #major : "IT" จะerror
+    def __init__(self,id:str,name:str,major:str = "IT") -> None:
         self.id = id
         self.name = name
         self.major = major
@@ -18,4 +22,5 @@ if __name__ == "__main__":
     john = Student("112","john","MKT")
     jessica.display_detail()
     john.display_detail()
-
+    amy = Student("113","Amy")
+    amy.display_detail()
