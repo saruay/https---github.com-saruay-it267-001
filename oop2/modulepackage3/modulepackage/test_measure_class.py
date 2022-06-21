@@ -1,4 +1,4 @@
-from measure import Measure
+from oop2.oop2.modulepackage2.measure import Measure
 
 if __name__=='__main__':
     '''m1 = Measure(56)

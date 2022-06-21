@@ -1,5 +1,5 @@
 #from my_math import square,circle_area
-import my_math as my
+import oop2.oop2.modulepackage2.my_math as my
 
 if __name__=='__main__':
     square_num = my.square(5)
