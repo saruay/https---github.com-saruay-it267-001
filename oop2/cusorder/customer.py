@@ -1,4 +1,4 @@
 class Customer:
-    def __init__(self,name,address) -> None:
+    def __init__(self,name:str,address:str) -> None:
         self.name = name
         self.address = address
