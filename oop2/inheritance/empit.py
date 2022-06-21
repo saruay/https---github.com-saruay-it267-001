@@ -17,7 +17,7 @@ class EmpIT(Employee):
         super().emp_detail()
          #เรียกใช้ method emp_detail ของคลาส Employee เพื่อแสดง id,name
         print(f'skill: {self.skill}')
-        print(f'experience: {self.emp_detail} year(s)')
+        print(f'experience: {self.experience} year(s)')
 
     def it_salary(self):
         self._emp_salary()
