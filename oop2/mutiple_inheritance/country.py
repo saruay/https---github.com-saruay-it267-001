@@ -1,8 +1,16 @@
+from unicodedata import name
 from geographic import Geographic
 from temperature import Temperature
 
 class Country(Geographic,Temperature):
-    def __init__(self,name,area,pop) -> None:
+    """def __init__(self,name,area,pop) -> None:
+        self.name = name
+        self.area = area
+        self.population = pop"""
+    def __init__(self) -> None:
+        #super().__init__() #ถ้าใช้ super () ไม่ต้องใส่
+        Geographic.__init__(self) #ถ้าใช้แบบนี้ต้องใส่ (self)
+        Temperature.__init__(self)
         self.name = name
         self.area = area
         self.population = pop
